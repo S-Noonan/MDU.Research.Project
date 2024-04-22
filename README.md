@@ -3,4 +3,15 @@ A genomic framework for enhanced strain identification: to improve outbreak dete
 as an exemplar.
 
 Supervisor: Dr Jake Lacey, Dr Kristy Horen, Prof Benjamin Howden
+
 Student: Susan Noonan
+
+University of Melbourne
+
+Peter Doherty Institute for Infection & Immunity
+
+Master of Science - Bioinformatics
+
+Research Project
+
+
