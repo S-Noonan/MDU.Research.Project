@@ -1,5 +1,11 @@
-# Python script to determine species groups for ECC project
 # BANCSIA - Bacterial Naming for Correct Species Identification & Allocation 
+# created by: Susan Noonan
+# Python script to determine species groups for ECC Masters research project
+# This script can be used to determine species groups based on genetic relatedness and a set threshold distance
+
+# Input = the output from running ska dist (.tsv) file (https://github.com/simonrharris/SKA)
+# Input = threshold distance relevant to your analysis (eg. 0.02 for subspecies, 0.04 for species)
+# Output = .csv file with isolate name and group number
 
 !pip install pandas
 import pandas as pd
@@ -85,3 +91,4 @@ df_ouput = df_with_spec(grouping)
 # save this file as csv and use for further analysis in R
 df_ouput.to_csv('/path_to_file/allocation_result.csv', index=True)
         
+# Manually check your results to determine which species names are appropriate or complete further analysis using group number
