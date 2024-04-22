@@ -1,4 +1,5 @@
 # Python script to determine species groups for ECC project
+# BANCSIA - Bacterial Naming for Correct Species Identification & Allocation 
 
 !pip install pandas
 import pandas as pd
