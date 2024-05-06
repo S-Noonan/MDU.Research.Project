@@ -87,8 +87,8 @@ max_dist = 0.04
 # run function to get species groups
 grouping = species_groups(df)
 # turn output into dataframe where each isolate has a grouping number
-df_ouput = df_with_spec(grouping)
+df_output = df_with_spec(grouping)
 # save this file as csv and use for further analysis in R
-df_ouput.to_csv('/path_to_file/allocation_result.csv', index=True)
+df_output.to_csv('/path_to_file/allocation_result.csv', index=True)
         
 # Manually check your results to determine which species names are appropriate or complete further analysis using group number
