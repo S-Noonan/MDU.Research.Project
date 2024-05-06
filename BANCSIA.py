@@ -56,7 +56,11 @@ def species_groups(df):
             result_samples[i] = group
             i+=1
         else:
-            if check_dict(result_samples, group) == False:
+            if len(group) ==0:
+                result_samples[i] = sample 
+                # if there are no other isolates that are within the threshold, add the sample you checked
+                i+=1
+            elif check_dict(result_samples, group) == False:
                 # there were no values that overlap, so add new item to dict
                 result_samples[i] = group
                 i+=1
