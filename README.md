@@ -1,7 +1,7 @@
 # MDU.Research.Project
 ![Banksia serrata painted by Hilary Ash](/assets/images/IMG_0822.png)
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">](https://github.com/S-Noonan/MDU.Research.Project/blob/main/IMG_0822.png">
+
+<source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">](https://github.com/S-Noonan/MDU.Research.Project/blob/main/IMG_0822.png">
 
 A genomic framework for enhanced strain identification: to improve outbreak detection and public health surveillance using Enterobacter Cloacae Complex 
 as an exemplar.
