@@ -22,13 +22,14 @@ Enterobacter genomes were downloaded and analysed to:
 - determine AMR gene profiles
 
 ### Quality assessment
-__[seqkit Github](https://bioinf.shenwei.me/seqkit/)
+[seqkit Github](https://bioinf.shenwei.me/seqkit/)
 
 ```Linux
 seqkit stat *.fa -a > /path/to_folder/seqkit_stats.txt
 ```
 
 ### Generating MLST profiles and STs
+[mlst Github](https://github.com/tseemann/mlst)
 
 ```Linux
 for f in *.fa do; do mlst --scheme ecloacae $f >> mlst.tsv; done
