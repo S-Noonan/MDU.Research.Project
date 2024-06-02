@@ -57,6 +57,7 @@ for i in $(cat isolate_names.txt); do mash sketch -m 2 *samples/$i; done
 mkdir mash_folder
 mv *.msh > mash_folder
 ls *.msh > mash_list.txt
+mash triangle -l mash_list.txt > mash_dist.tab
 mashtree *.msh > mash.dnd
 ```
 
