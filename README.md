@@ -15,4 +15,16 @@ Master of Science - Bioinformatics
 
 Research Project
 
+Enterobacter genomes were downloaded and analysed to differntiate the species boundaries, investigate MLST profiles within species groups, complete pan-genome analysis and determine AMR gene profiles.
 
+### Quality assessment
+
+```Linux
+seqkit stat *.fa -a > /path/to_folder/seqkit_stats.txt
+```
+
+### Generating MLST profiles and STs
+
+```Linux
+for f in *.fa do; do mlst --scheme ecloacae $f >> mlst.tsv; done
+```
