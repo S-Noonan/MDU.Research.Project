@@ -13,11 +13,16 @@ Peter Doherty Institute for Infection & Immunity
 
 Master of Science - Bioinformatics
 
-Research Project
+## Research Project
 
-Enterobacter genomes were downloaded and analysed to differntiate the species boundaries, investigate MLST profiles within species groups, complete pan-genome analysis and determine AMR gene profiles.
+Enterobacter genomes were downloaded and analysed to:
+- differentiate the species boundaries
+- investigate MLST profiles within species groups
+- complete pan-genome analysis
+- determine AMR gene profiles
 
 ### Quality assessment
+__[seqkit Github](https://bioinf.shenwei.me/seqkit/)
 
 ```Linux
 seqkit stat *.fa -a > /path/to_folder/seqkit_stats.txt
