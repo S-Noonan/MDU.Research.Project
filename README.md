@@ -1,6 +1,4 @@
 # MDU.Research.Project
-![Banksia serrata painted by Hilary Ash](/assets/images/IMG_0822.png)
-
 
 A genomic framework for enhanced strain identification: to improve outbreak detection and public health surveillance using Enterobacter Cloacae Complex 
 as an exemplar.
@@ -14,6 +12,8 @@ University of Melbourne
 Peter Doherty Institute for Infection & Immunity
 
 Master of Science - Bioinformatics
+
+<img src="/IMG_0822.png" width=180 height=230>
 
 ## Research Project
 
