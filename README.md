@@ -73,6 +73,7 @@ for f in $(cat prokka_names.txt); do prokka --outdir $f --prefix $f $f.fa --genu
 ```
 
 ### Pan-genome analysis using Panaroo
+[Panaroo](https://github.com/gtonkinhill/panaroo)
 Add .gff to end of each isolate name used by Prokka. Run panaroo on all the samples.
 
 ```Linux
