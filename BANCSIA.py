@@ -69,8 +69,25 @@ def species_groups(df):
                 new = list_diff(group, result_samples[index])
                 result_samples[index] = new
                 i+=1
+    print("You analysed ", len(unique_sample_names), " isolates.")
+    print("At a threshold of ", max_dist, "there are ", len(result_samples), " groups.")
     return result_samples
 
+# Check if any samples appear in more than one group and print the ones that do.
+def unique_grps(dataframe):
+    # Group by 'entry' and filter out entries that appear more than once
+    duplicate_entries = dataframe.groupby('isolate').filter(lambda x: len(x) > 1)
+    if len(duplicate_entries) == 0:
+        print("Each isolate is in a unique group.")
+    else:
+        print("The following isolates are allocated to multiple groups: ")
+        # Iterate through the duplicate entries and print them along with their group keys
+        for entry in duplicate_entries['isolate'].unique():
+            groups = duplicate_entries[duplicate_entries['isolate'] == entry]['group_no'].tolist()
+            print(entry, "is in groups ",groups)
+        #print(f"Isolate: {isolate}, Groups: {group_no}")
+    return
+    
 # Create a dataframe from the dictionary created with each isolates allocated a species group number
 def df_with_spec(dict):
     # create empty dataframe
@@ -90,6 +107,9 @@ df = pd.read_csv(file_path)
 max_dist = 0.04
 # run function to get species groups
 grouping = species_groups(df)
+# turn this into a dataframe to check if any isolates are allocated more than one group
+check_df = pd.DataFrame([(key, value) for key, values in serr_grps.items() for value in values], columns=['group_no', 'isolate'])
+unique_grps(check_df)
 # turn output into dataframe where each isolate has a grouping number
 df_output = df_with_spec(grouping)
 # save this file as csv and use for further analysis in R
