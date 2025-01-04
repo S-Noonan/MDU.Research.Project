@@ -51,7 +51,10 @@ ska distance -s 20 -i 0.9 *.skf -o ska
 
 ### Run BANCSIA script to get species groupings
 [Susan Noonan Github](https://github.com/S-Noonan/MDU.Research.Project/blob/main/BANCSIA_v2.py)
+
 Change the distance threshold as required
+
+This script takes the results of ska distance and groups isolates within a genomic distance.  The script will generate a report that summarises the number of isolates analysed, the number of species groups for the given threshold distance, and the number of isolates that are allocated to more than one group.
 ```Linux
 mkdir Grouping_results
 cd Grouping_results
