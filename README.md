@@ -49,6 +49,16 @@ mv *.skf /ska_folder
 ska distance -s 20 -i 0.9 *.skf -o ska
 ```
 
+### Run BANCSIA script to get species groupings
+[Susan Noonan Github](https://github.com/S-Noonan/MDU.Research.Project/blob/main/BANCSIA_v2.py)
+Change the distance threshold as required
+```Linux
+mkdir Grouping_results
+cd Grouping_results
+/path_to/BANCSIA_v2.py /path_to/input_file.tsv 0.04
+```
+
+
 ### Mash and Mashtree
 [Mash](https://github.com/marbl/Mash)
 [Mashtree](https://github.com/lskatz/mashtree)
